@@ -1,0 +1,711 @@
+/*==================
+ extra small device 
+ ===================*/
+
+@media(max-width:575.99px) {
+    .navbar-nav {
+        text-align: center !important;
+        margin-bottom: 20px !important;
+    }
+
+    #navbarSupportedContent {
+        text-align: center !important;
+    }
+
+    .hire-me {
+        margin-left: -20px;
+    }
+
+
+
+
+    /*==================
+          nav css end
+     ==================  */
+    #banner .banner-text {
+        padding-top: 80px !important;
+        margin-top: 0 !important;
+    }
+
+    #banner .banner-text h1 {
+        font-size: 30px;
+    }
+
+    #banner .banner-text h1 span {
+        font-size: 30px;
+    }
+
+    #banner .banner-text h4 {
+        font-size: 14px;
+    }
+
+    #banner .banner-text p {
+        padding-right: 0px;
+        font-size: 14px;
+    }
+
+    #banner .banner-text .explore {
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #banner .banner-images {
+        position: relative;
+        top: 100px;
+        left: 0px;
+        z-index: 1;
+    }
+
+    #banner .banner-images::before {
+        top: 60px;
+
+    }
+
+    #banner .banner-images::after {
+        top: -22px;
+    }
+
+    #banner .Scroll-icon {
+        margin-top: 130px;
+    }
+
+    #banner .Scroll-icon img {
+        right: 0px;
+    }
+
+    #banner .Scroll-icon span {
+        padding-right: 19px;
+        letter-spacing: 5px;
+        writing-mode: sideways-rl;
+        -webkit-writing-mode: sideways-rl;
+        -ms-writing-mode: sideways-rl;
+    }
+
+    /* ===================
+        banner css end 
+    =================== */
+
+    #about {
+        margin-top: 0;
+    }
+
+    #about .abt-text {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    #about .abt-text h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    #about .abt-text p {
+        font-size: 14px;
+        padding-right: 0px;
+        text-align: center;
+        margin-bottom: 30px !important;
+    }
+
+    #about .abt-text a {
+        font-size: 14px;
+        margin-top: 0 !important;
+    }
+
+    #about .abt-image {
+        margin-top: -145px;
+    }
+
+    /* ===================
+        about css end 
+    =================== */
+    #service {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    #service .sub-text {
+        margin-bottom: 0 !important;
+    }
+
+    #service .sub-text h1 {
+        font-size: 48px;
+    }
+
+
+    #service .srv-item {
+        margin-bottom: 20px;
+        padding-bottom: 50px;
+    }
+
+    #service .srv-item i {
+        font-size: 14px;
+    }
+
+    #service .srv-item h3 {
+        font-size: 14px;
+    }
+
+    #service .srv-item p {
+        font-size: 14px;
+    }
+
+    /* ===================
+        service css end 
+    =================== */
+    #project .sub-text h1 {
+        font-size: 40px;
+    }
+
+    #project .sub-text {
+        margin-bottom: 0 !important;
+    }
+
+    #project .swiper {
+        width: 84% !important;
+    }
+
+    #project .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        display: none;
+    }
+
+    #project .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        display: none;
+    }
+
+    /* ===================
+        project css end 
+    =================== */
+    #work {
+        padding-top: 0 !important;
+    }
+
+    #work .sub-text h1 {
+        font-size: 48px !important;
+    }
+
+    #work .rw-item .text .website {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        font-size: 9px;
+    }
+
+    #work .rw-item h1 {
+        font-style: 18px !important;
+    }
+
+    /* ===================
+       Recent work css end 
+    =================== */
+    #help .sub-text h1 {
+        font-size: 40px !important;
+    }
+
+    #help .sub-text a {
+        font-size: 14px !important;
+    }
+
+    /* ===================
+       help work css end 
+    =================== */
+    #testimonial .sub-text h1 {
+        font-size: 40px !important;
+    }
+
+    #testimonial .test-item .text-body p {
+        padding: 15px 10px;
+    }
+
+    /* ===================
+      testmonial css end 
+    =================== */
+    #funfacet .t-body {
+        padding-top: 20px;
+    }
+
+    /* ===================
+      funfacet css end 
+    =================== */
+    #hire .sub-text h1 {
+        font-size: 40px !important;
+    }
+
+    #hire label {
+        font-size: 14px !important;
+    }
+
+    #hire .send {
+        font-size: 14px !important;
+    }
+
+    /* ===================
+      hire css end 
+    =================== */
+
+    #map .text-body {
+        text-align: center !important;
+    }
+
+    /* ===================
+      hire css end 
+    =================== */
+}
+
+/*==================
+     small device 
+ ===================*/
+
+@media(min-width:576px) and (max-width:767.99px) {
+
+    .navbar-nav {
+        text-align: center !important;
+        margin-bottom: 20px !important;
+    }
+
+    #navbarSupportedContent {
+        text-align: center !important;
+    }
+
+    .navbar-nav .nav-link {
+        margin-bottom: 15px;
+    }
+
+    .hire-me {
+        margin-left: -20px;
+    }
+
+    /*==================
+          nav css end
+     ==================  */
+    #banner .banner-text {
+        padding-top: 80px !important;
+        margin-top: 0 !important;
+    }
+
+    #banner .banner-text h1 {
+        font-size: 45px;
+    }
+
+    #banner .banner-text h1 span {
+        font-size: 45px;
+    }
+
+    #banner .banner-text h4 {
+        font-size: 20px;
+    }
+
+    #banner .banner-text p {
+        padding-right: 0px;
+        font-size: 14px;
+    }
+
+    #banner .banner-text .explore {
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #banner .banner-images {
+        position: relative;
+        top: 100px;
+        left: 0px;
+        z-index: 1;
+    }
+
+    #banner .banner-images::before {
+        top: 80px;
+
+    }
+
+    #banner .banner-images::after {
+        top: -33px;
+    }
+
+    #banner .Scroll-icon {
+        margin-top: 345px;
+    }
+
+
+
+    /*==================
+          banner css end
+     ==================  */
+    #about {
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-top: 50px !important;
+    }
+
+    #about .abt-text {
+        margin-top: 0px;
+    }
+
+    #about .abt-text {
+        text-align: center !important;
+    }
+
+    #about .abt-text h1 {
+        font-size: 40px;
+    }
+
+    #about .abt-text p {
+        padding-right: 6px;
+        padding-left: 6px;
+    }
+
+    #about .abt-text a {
+        font-size: 14px;
+        margin-top: 0 !important;
+    }
+
+    #about .abt-image {
+        margin-top: 30px;
+    }
+
+
+    /*==================
+          about css end
+     ==================  */
+    #service .sub-text {
+        margin-bottom: 0px !important;
+    }
+
+    #service .sub-text h1 {
+        font-size: 40px;
+    }
+
+    #service .srv-item {
+        margin-bottom: 20px;
+        padding-bottom: 50px;
+    }
+
+    #service .srv-item i {
+        font-size: 14px;
+    }
+
+    #service .srv-item h3 {
+        font-size: 14px;
+    }
+
+    #service .srv-item p {
+        font-size: 14px;
+        padding: 0;
+    }
+
+    /* ===================
+        service css end 
+    =================== */
+    #project .sub-text h1 {
+        font-size: 40px;
+    }
+
+    #project .sub-text {
+        margin-bottom: 0 !important;
+    }
+
+    #project .swiper {
+        width: 84% !important;
+    }
+
+    #project .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        right: -50px;
+    }
+
+    #project .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        left: -50px;
+    }
+
+    /* ===================
+        project css end 
+    =================== */
+    #work {
+        padding-top: 0 !important;
+    }
+
+    #work .sub-text h1 {
+        font-size: 40px !important;
+    }
+
+
+    /* ===================
+        recent work css end 
+    =================== */
+
+    #testimonial .sub-text h1 {
+        font-size: 40px !important;
+    }
+
+    /* ===================
+      testmonial css end 
+    =================== */
+    #help .sub-text h1 {
+        font-size: 40px !important;
+    }
+
+    #help .sub-text a {
+        font-size: 14px !important;
+    }
+
+    /* ===================
+      help css end 
+    =================== */
+
+
+    #hire .sub-text h1 {
+        font-size: 40px !important;
+    }
+
+    #hire label {
+        font-size: 14px !important;
+    }
+
+    #hire .send {
+        font-size: 14px !important;
+    }
+
+    #hire .send {
+        padding: 10px 15px;
+        border: 2px solid var(--brand);
+        transition: all ease-in-out 0.4s;
+        -webkit-transition: all ease-in-out 0.4s;
+        -moz-transition: all ease-in-out 0.4s;
+        -ms-transition: all ease-in-out 0.4s;
+        -o-transition: all ease-in-out 0.4s;
+    }
+
+    /* ===================
+      hire css end 
+    =================== */
+
+
+}
+
+/*==================
+    medium device 
+ ===================*/
+
+@media(min-width:768px) and (max-width: 991.99px) {
+
+    .navbar-nav {
+        text-align: center !important;
+        margin-bottom: 20px !important;
+    }
+
+    #navbarSupportedContent {
+        text-align: center !important;
+    }
+
+    .navbar-nav .nav-link {
+        margin-bottom: 15px;
+    }
+
+    .hire-me {
+        margin-left: -20px;
+    }
+
+    /*==================
+    nav-css-end
+ ===================*/
+    #banner .banner-text {
+        padding-top: 80px !important;
+        margin-top: 0 !important;
+    }
+
+    #banner .banner-text h1 {
+        font-size: 42px;
+    }
+
+    #banner .banner-text h1 span {
+        font-size: 42px;
+    }
+
+    #banner .banner-text h4 {
+        font-size: 20px;
+    }
+
+    #banner .banner-text p {
+        padding-right: 70px;
+        font-size: 14px;
+    }
+
+    #banner .banner-text .explore {
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #banner .banner-images {
+        position: relative;
+        top: 100px;
+        left: 0px;
+        z-index: 1;
+    }
+
+    #banner .banner-images::before {
+        top: 95px;
+
+    }
+
+    #banner .banner-images::after {
+        top: -33px;
+    }
+
+    #banner .Scroll-icon {
+        margin-top: 345px;
+    }
+
+
+    /*==================
+    banner-css-end
+ ===================*/
+    #about {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    #about .abt-text {
+        margin-top: 0px;
+    }
+
+    #about .abt-text {
+        text-align: left !important;
+    }
+
+    #about .abt-text h1 {
+        text-align: left;
+        font-size: 40px;
+    }
+
+
+    /*==================
+    about-css-end
+ ===================*/
+    #service .sub-text {
+        margin-bottom: 0px !important;
+    }
+
+    #service .sub-text h1 {
+        font-size: 40px;
+    }
+
+    #service .srv-item {
+        margin-bottom: 20px;
+        padding-bottom: 50px;
+    }
+
+    #service .srv-item i {
+        font-size: 14px;
+    }
+
+    #service .srv-item h3 {
+        font-size: 14px;
+    }
+
+    #service .srv-item p {
+        font-size: 14px;
+        padding: 0;
+    }
+
+    /*==================
+    service-css-end
+ ===================*/
+
+    #project .sub-text h1 {
+        font-size: 40px;
+    }
+
+    #project .sub-text {
+        margin-bottom: 0 !important;
+    }
+
+    #project .swiper {
+        width: 84% !important;
+    }
+
+    #project .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        right: -50px;
+    }
+
+    #project .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        left: -50px;
+    }
+
+
+    /* ===================
+        project css end 
+    =================== */
+
+    #work {
+        padding-top: 0 !important;
+    }
+
+    #work .sub-text h1 {
+        font-size: 40px !important;
+    }
+
+    #work .rw-item .text .website {
+        padding: 8px 5px !important;
+        font-size: 10px !important;
+    }
+
+    /* ===================
+        recent-work-css-end 
+    =================== */
+    #testimonial .sub-text h1 {
+        font-size: 40px !important;
+    }
+
+    #testimonial .test-item .text-body p {
+        padding: 30px 0px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    /* ===================
+      testmonial css end 
+    =================== */
+    #help .sub-text h1 {
+        font-size: 40px !important;
+    }
+
+    #help .sub-text a {
+        font-size: 14px !important;
+    }
+
+    /* ===================
+      help css end 
+    =================== */
+
+    #hire .sub-text h1 {
+        font-size: 40px !important;
+    }
+
+    #hire label {
+        font-size: 14px !important;
+    }
+
+    #hire .send {
+        font-size: 14px !important;
+    }
+
+    /* ===================
+      hire css end 
+    =================== */
+
+
+
+}

@@ -1,0 +1,1081 @@
+:root {
+    --ff1: 'Roboto', sans-serif;
+    --ff2: 'Roboto Mono', monospace;
+    --ff3: 'Montserrat', sans-serif;
+
+    --brand: #5046C7;
+    --th-p: #BCB4B4;
+
+    --th-dark: #262626;
+    --bg-1: #080A11;
+    --bg-2: #001139;
+    --bg-3: #E4ECF5;
+    --bg-4: #C6D2E0;
+
+    --over-30: rgba(0, 0, 0, 0.3);
+    --over-50: rgba(0, 0, 0, 0.5);
+    --over-80: rgba(0, 0, 0, 0.8);
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/*==============================
+ common css end  
+==============================*/
+.robo-reg {
+    font-family: var(--ff1);
+    font-weight: 400;
+}
+
+.robo-med {
+    font-family: var(--ff1);
+    font-weight: 500;
+}
+
+
+.robo-bold {
+    font-family: var(--ff1);
+    font-weight: 700;
+}
+
+.robo-mono-reg {
+    font-family: var(--ff2);
+    font-weight: 400;
+}
+
+.mon-bold {
+    font-family: var(--ff3);
+    font-weight: 700;
+}
+
+.mon-sm-bold {
+    font-family: var(--ff3);
+    font-weight: 500;
+}
+
+/*==============================
+ font css end  
+==============================*/
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.fs-48 {
+    font-size: 48px;
+}
+
+
+.fs-60 {
+    font-size: 60px;
+}
+
+.fs-70 {
+    font-size: 70px;
+}
+
+.l-sp {
+    letter-spacing: 5px;
+}
+
+
+/*==============================
+ font size css end 
+==============================*/
+.brand-bg {
+    background: var(--brand);
+}
+
+.brand {
+    color: var(--brand);
+}
+
+.text-brand {
+    color: var(--brand);
+}
+
+.text-p {
+    color: var(--th-p);
+}
+
+.th-dark {
+    background: var(--th-dark);
+}
+
+.bg1 {
+    background: var(--bg-1);
+}
+
+.bg2 {
+    background: var(--bg-2);
+}
+
+.bg3 {
+    background: var(--bg-3);
+}
+
+.bg4 {
+    background: var(--bg-4);
+}
+
+
+/*==============================
+Color css end 
+==============================*/
+
+.hire-me {
+    padding: 2px 9px !important;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    border: 3px solid var(--brand);
+}
+
+.hire-me:hover {
+    color: var(--th-p) !important;
+    background: var(--brand);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-bottom: 2px solid var(--brand);
+    left: 0;
+    bottom: 0;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--brand) !important;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Remove border from toggler */
+.navbar-toggler {
+    border: 0 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+/* Lines of the Toggler */
+.toggler-icon {
+    width: 30px;
+    height: 3px;
+    background-color: var(--brand);
+    display: block;
+    transition: all 0.2s;
+}
+
+/* Adds Space between the lines */
+.middle-bar {
+    margin: 5px auto;
+}
+
+/* State when navbar is opened (START) */
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+/* State when navbar is opened (END) */
+
+/* State when navbar is collapsed (START) */
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+
+/* State when navbar is collapsed (END) */
+
+/* Color of Toggler when collapsed */
+.navbar-toggler.collapsed .toggler-icon {
+    background-color: #fff;
+}
+
+/*==============================
+          nav css end 
+==============================*/
+
+#banner .banner-text {
+    padding-top: 120px;
+}
+
+#banner .banner-text .explore {
+    padding: 10px 15px;
+    border: 2px solid var(--brand);
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+
+#banner .banner-text .explore:hover {
+    background: var(--brand);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+#banner .banner-text p {
+    padding-right: 415px;
+}
+
+
+#banner .banner-text .social-icon img {
+    width: 50px;
+    height: 50px;
+    fill: var(--brand);
+    position: relative;
+    left: -14px;
+}
+
+
+
+#banner .icon ul li a {
+    color: var(--th-p) !important;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#banner .icon ul li a:hover {
+    color: var(--brand) !important;
+    padding-left: 10px;
+}
+
+#banner .banner-text .social-icon span {
+    letter-spacing: 5px;
+    writing-mode: sideways-rl;
+    -webkit-writing-mode: sideways-rl;
+    -ms-writing-mode: sideways-rl;
+}
+
+#banner .banner-images {
+    position: relative;
+    top: 100px;
+    left: -100px;
+    z-index: 1;
+}
+
+#banner .banner-images::after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: -50px;
+    right: 0;
+    background: linear-gradient(to bottom, #333131, #545253, #777677, #9d9c9d, #c4c4c4);
+    z-index: -1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#banner .banner-images::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    bottom: -50px;
+    left: 0;
+    background: linear-gradient(to top, #333131, #545253, #777677, #9d9c9d, #c4c4c4);
+    z-index: -1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#banner .banner-images img {
+    border: 5px solid var(--brand);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+#banner .Scroll-icon span {
+    letter-spacing: 5px;
+    writing-mode: sideways-rl;
+    -webkit-writing-mode: sideways-rl;
+    -ms-writing-mode: sideways-rl;
+}
+
+#banner .Scroll-icon {
+    margin-top: 320px;
+}
+
+#banner .Scroll-icon img {
+    width: 60px;
+    height: 60px;
+    fill: var(--brand);
+    position: relative;
+    right: -19px;
+    bottom: 0;
+}
+
+/*==============================
+          banner css end 
+==============================*/
+#about .work {
+    padding: 10px 20px;
+    border: 2px solid var(--brand);
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+
+#about .work:hover {
+    border: 2px solid var(--brand);
+    background: var(--brand);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#about .bg {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#about .abt-text {
+    margin-top: 300px;
+}
+
+#about .abt-text p {
+    padding-right: 102px;
+}
+
+/*==============================
+          about css end 
+==============================*/
+#service .srv-item {
+    position: relative;
+}
+
+#service .srv-item::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all linear 0.8s;
+    -webkit-transition: all linear 0.8s;
+    -moz-transition: all linear 0.8s;
+    -ms-transition: all linear 0.8s;
+    -o-transition: all linear 0.8s;
+}
+
+#service .srv-item:hover:after {
+    width: 100%;
+    border-bottom: 2px solid var(--brand);
+}
+
+
+#service .srv-item i {
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#service .srv-item h3 {
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#service .srv-item p {
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#service .srv-item:hover i {
+    color: var(--brand) !important;
+}
+
+#service .srv-item:hover h3 {
+    color: var(--brand) !important;
+}
+
+#service .srv-item:hover p {
+    color: var(--brand) !important;
+}
+
+#service .srv-item p {
+    padding: 0 40px;
+}
+
+#service .srv-item {
+    margin-bottom: 20px;
+    padding-bottom: 100px;
+}
+
+
+/*==============================
+          service css end 
+==============================*/
+#project .swiper {
+    width: 630px;
+}
+
+#project .swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear 0.9s;
+    -webkit-transition: all linear 0.9s;
+    -moz-transition: all linear 0.9s;
+    -ms-transition: all linear 0.9s;
+    -o-transition: all linear 0.9s;
+
+    cursor: grab;
+}
+
+#project .swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    right: -100px;
+    color: var(--brand);
+}
+
+#project .swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    left: -100px;
+    color: var(--brand);
+}
+
+#project .swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+}
+
+#project .swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: var(--swiper-pagination-color, var(--brand));
+}
+
+
+/*==============================
+          project css end 
+==============================*/
+#work .rw-item .images img {
+    border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+}
+
+
+#work .rw-item {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: grab;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#work .rw-item:hover {
+    background: transparent;
+}
+
+
+#work .rw-item .text .website {
+    padding: 10px 20px !important;
+    border: 2px solid var(--brand);
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+
+#work .rw-item:hover .website {
+    background: var(--brand);
+    color: #fff !important;
+    border-radius: 5px !important;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -ms-border-radius: 5px !important;
+    -o-border-radius: 5px !important;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(80, 70, 199, 0.5);
+    box-shadow: 5px 5px 15px 5px rgba(80, 70, 199, 0.5);
+}
+
+
+#work .rw-item .text span a {
+    color: var(--th-dark);
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#work .rw-item:hover span a {
+    color: var(--brand);
+}
+
+#work .rw-item h1 {
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#work .rw-item:hover h1 {
+    color: var(--th-p) !important;
+}
+
+#work .rw-item h6 {
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#work .rw-item:hover h6 {
+    color: var(--th-p) !important;
+}
+
+#work .rw-item p {
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#work .rw-item:hover p {
+    color: var(--th-p) !important;
+}
+
+#work .rw-item span {
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#work .rw-item:hover span {
+    color: var(--th-p) !important;
+}
+
+
+/*==============================
+          project css end 
+==============================*/
+#testimonial .test-item {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: grab;
+}
+
+#testimonial .test-item .text-body p {
+    padding: 30px 50px;
+}
+
+#testimonial .test-item .text-body {
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#testimonial .test-item .text-body .s-icon {
+    padding-bottom: 60px;
+
+}
+
+#testimonial .image {
+    position: relative;
+    top: -42px;
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#testimonial .image img {
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    -o-border-radius: 50% !important;
+}
+
+#testimonial li button {
+    font-size: 0;
+    border: none;
+    outline: none;
+}
+
+#testimonial .slick-dots {
+    padding-left: 0;
+    margin-bottom: 0;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#testimonial .slick-dots li {
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--brand);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#testimonial .slick-dots li.slick-active {
+    background: var(--brand);
+}
+
+/*==============================
+          testimonial css end 
+==============================*/
+#help {
+    background: url(../images/help-bg.svg) no-repeat center / cover;
+    padding-top: 45px;
+    margin-bottom: 100px;
+}
+
+#help .contact {
+    padding: 10px 20px;
+    border: 2px solid var(--brand);
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+
+#help .contact:hover {
+    border: 2px solid var(--brand);
+    background: var(--brand);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#help .sub-text {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+/*==============================
+          help css end 
+==============================*/
+
+#funfacet .funfacet-bg {
+    background: url(../images/fujnfacet-bg.jpg) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+}
+
+#funfacet .funfacet-bg::after {
+    content: "";
+    position: absolute;
+    background: var(--over-80);
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    z-index: -1;
+}
+
+
+/*==============================
+          funfacet css end 
+==============================*/
+
+#hire .bg1 {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#hire .send {
+    padding: 10px 20px;
+    border: 2px solid var(--brand);
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+
+#hire .send:hover {
+    border: 2px solid var(--brand);
+    background: var(--brand) !important;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.form-control:focus {
+    border-color: var(--brand) !important;
+}
+
+
+
+/*==============================
+          hire css end 
+==============================*/
+#map {
+    background: url(../images/map.png) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#map::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background: var(--over-50);
+    z-index: -1;
+}
+
+#map .text-body {
+    background: #1e1e1e;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#map .text-body {
+    padding-left: 10px;
+    position: relative;
+    padding-left: 50px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#map .text-body i {
+    padding: 5px;
+    background: #262626;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+#map .text-body:hover i {
+    color: var(--brand) !important;
+}
+
+#map .text-body a {
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#map .text-body:hover a {
+    color: var(--brand) !important;
+}
+
+/*==============================
+          hire css end 
+==============================*/
+
+#copy {
+    background: var(--brand);
+}
+
+/*==============================
+          hire css end 
+==============================*/
+
+.preloder {
+    width: 100%;
+    height: 100vh;
+    background: var(--th-dark);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.preloder svg {
+    display: block;
+    width: 258px;
+    height: 258px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.preloder .tree {
+    fill: var(--brand);
+}
+
+.preloder .circle-mask {
+    transform-origin: 50% 90%;
+    animation: scale 5s infinite ease-out;
+}
+
+@keyframes scale {
+
+    0%,
+    100% {
+        transform: scale(0.0);
+    }
+
+    7%,
+    90% {
+        transform: scale(0.4);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+/*==============================
+          hire css end 
+==============================*/
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    display: none;
+    animation: 1.5s ease 0s infinite beat;
+}
+
+@keyframes beat {
+
+    0%,
+    50%,
+    100% {
+        transform: scale(1, 1);
+    }
+
+    30%,
+    80% {
+        transform: scale(0.92, 0.95);
+    }
+}
+
+
+.back-to-top i {
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+.back-to-top:hover i {
+    color: var(--brand) !important;
+}
+
+
+/*==============================
+          preloader css end 
+==============================*/
+
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: var(--brand) #353535;
+
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #353535;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-image: radial-gradient(circle, #5046c7, #463f9c, #3c3773, #322f4c, #262626);
+    border-radius: 10px;
+}
+
+/*===================
+scroll bar css end
+ ==================*/
